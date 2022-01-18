@@ -3,7 +3,7 @@
         <div class="top-part">
             <div class="container">
                 <h4>WHAT ARE WE DOING</h4>
-                <h2>Results in Numbers</h2>
+                <h2 class="title"><span class="decor"> Results</span> in Numbers</h2>
                 <div class="numbers">
                     <!-- da fare un con un v-for -->
                     <div class="single-number">
@@ -11,16 +11,16 @@
                         <h3>certifications</h3>
                     </div>
                     <div class="single-number">
-                        <h2>128</h2>
-                        <h3>certifications</h3>
+                        <h2>280</h2>
+                        <h3>Employees</h3>
                     </div>
                     <div class="single-number">
-                        <h2>128</h2>
-                        <h3>certifications</h3>
+                        <h2>517</h2>
+                        <h3>Customers</h3>
                     </div>
                     <div class="single-number">
-                        <h2>128</h2>
-                        <h3>certifications</h3>
+                        <h2>94</h2>
+                        <h3>Country Served</h3>
                     </div>
                 </div>
     
@@ -29,11 +29,12 @@
         <div class="bottom-part">
             <div class="partners">
                 <!-- andranno resizati tutti -->
-                <img src="../assets/img/logo-4.png" alt="logo jQuery">
-                <img src="../assets/img/logo-5.png" alt="logo jQuery">
+                <img class="outlier" src="../assets/img/logo-4.png" alt="logo jQuery">
+                <img class="outlier" src="../assets/img/logo-5.png" alt="logo jQuery">
                 <img src="../assets/img/logo-1.png" alt="logo jQuery">
                 <img src="../assets/img/logo-2.png" alt="logo jQuery">
                 <img src="../assets/img/logo-3.png" alt="logo jQuery">
+                <img class="outlier" src="../assets/img/logo-4.png" alt="logo jQuery">
             </div>
         </div>
     </section>
@@ -50,7 +51,7 @@ export default {
 <style scoped lang="scss">
 section{
     height: 700px;
-    background-color: pink;
+    
     .top-part{
         background-image: url("../assets/img/bg-7.jpg");
         background-size: cover;
@@ -65,18 +66,37 @@ section{
             width: 70%;
             margin: auto;
             text-align: center;
-            
+            h4{
+                color:#038f7f ;
+                font-size: 12px;
+            }
+            .title{
+                font-size: 44px;
+                margin: 24px 0;
+                .decor{
+                    background-color: #0c2c2e;
+                    padding: 4px 9px;
+                }
+            }
             .numbers{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-evenly;
                 margin: 60px 0;
+                h2{
+                    font-size: 33px;
+                    color: #01a5a6;
+                    margin: 10px;
+                }
+                h3{
+                    font-size: 20px;
+                }
             }
         }
         
     }
     .bottom-part{
-        height: 250px;
+        height: 200px;
         background-color: #111117;
         .partners{
             width: 70%;
@@ -88,7 +108,11 @@ section{
             align-items: center;
             img{
                 width: 9%;
-                filter: invert(100%);
+                filter: invert(50%);
+                
+            }
+            .outlier{
+                width: 5%;
             }
         }
     }

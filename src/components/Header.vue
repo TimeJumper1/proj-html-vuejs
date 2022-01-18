@@ -1,16 +1,17 @@
 <template>
     <header>
         <div class="container">
-            <div class="destra">
-                orario
-            </div>
             <div class="sinistra">
+                <i class="fas fa-clock"></i>
+                Open Hours: Mon - Sat - 9:00 - 18:00
+            </div>
+            <div class="destra">
                 <ul>
-                    <li>info</li>
-                    <li>info</li>
-                    <li>info</li>
-                    <li>info</li>
-                    <li>info</li>
+                    <li><i class="fas fa-phone-alt"></i>+1 (305) 1234-5678</li>
+                    <li><i class="fas fa-envelope"></i>Hello@example.com</li>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-linkedin-in"></i></li>
                 </ul>
             </div>
         </div>
@@ -38,13 +39,21 @@ header{
         display: flex;
         justify-content: space-between;
         line-height: 40px;
-        ul{
+        .sinistra{
+            font-size: 13px;
+            color:#c0c3d0 ;
+        }
+        .destra{
+            font-size: 13px;
+            color:#c0c3d0 ;
+            ul{
             list-style-type: none;
             display: flex;
             flex-direction: row;
             li{
                 margin:0 10px;
             }
+        }
         }
     }
 }

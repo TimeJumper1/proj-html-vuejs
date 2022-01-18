@@ -48,7 +48,7 @@ export default {
 section{
     // height: 800px;
     background-color: #eef4ed;
-    margin: 40px 0;
+    padding: 40px 0;
     .container{
         width: 70%;
         margin: auto;

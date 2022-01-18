@@ -3,28 +3,30 @@
         <div class="background-image">
             <div class="container">
                 <div class="sinistra">
-                    testo
+                    <img src="../assets/img/logo.png" alt="">
                 </div>
                 <div class="destra">
                     <ul>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
+                        <li>HOME</li>
+                        <li>SERVICES</li>
+                        <li>ABOUT</li>
+                        <li>PROJECTS</li>
+                        <li>RESULTS</li>
+                        <li>GET IN TOUCH</li>
                     </ul>
                 </div>
             </div>
             <div class="central-text">
-                <h2>Ready Team</h2>
+                <h2>Ready <span class="decor">Team</span></h2>
                 <p>no matter what your company needs, we will be ready to assist you in the best possible way.</p>
-                <span class="btn">
-                    get in touch
+                <div>
+                    <span class="btn">
+                    GET IN TOUCH
                 </span>
                 <span class="btn">
-                    get in touch
+                    READ MORE
                 </span>
+                </div>
 
             </div>
         </div>
@@ -41,7 +43,6 @@ export default {
 
 <style scoped lang="scss">
 section{
-    position: relative;
     height: 500px;
     .background-image{
         background-image: url("../assets/img/bg-parallax.png");
@@ -52,27 +53,78 @@ section{
         overflow: hidden;
         .container{
         width: 70%;
+        height: 40px;
         margin: auto;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         line-height: 40px;
-        ul{
+        font-size: 15px;
+        .sinistra{
+            padding-top:10px ;
+            img{
+                width: 100px;
+            }
+            
+        }
+        .destra{
+            ul{
             list-style-type: none;
             display: flex;
             flex-direction: row;
             li{
-                margin:0 10px;
+                cursor: pointer;
+                padding: 3px 10px;
+                &:hover{
+                    color: white;
+                    background-color:#058283 ;
+                    border-radius: 4px;
+                    transition: 0.7s;
+                }
             }
+        }
         }
     }
         .central-text{
-            width:20% ;
-            position: absolute;
-            top: 50%;
-            left: 40%;
+            width: 25%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: auto;
             text-align: center;
             padding: 10px;
-            font-size: 20px;
+            h2{
+                font-size: 60px;
+                margin: 20px 0;
+                font-weight: bold;
+                color:#21333e ;
+                .decor{
+                    color:#058283 ;
+                    background-color: #d5e7e8;
+                    padding: 5px 9px;
+                }
+            }
+            p{
+                font-size: 16px;
+                color:#8c969b ;
+                margin-bottom:30px ;
+            }
+            .btn{
+                padding: 7px 17px;
+                border: 1px solid #058283;
+                color: #058283;
+                cursor: pointer;
+                margin: 0 11px;
+                font-size: 15px;
+                font-weight: bold;
+                display: inline-block;
+                &:hover{
+                    background-color: #058283;
+                    color: white;
+                    transition: 0.5s;
+                }
+            }
         }
     }
     

@@ -3,6 +3,7 @@
         <Jumbotron/>
         <ServiceSection/>
         <CompanySection/>
+        <ActionSection/>
     </main>
 </template>
 
@@ -10,13 +11,15 @@
 import Jumbotron from "./Jumbotron.vue";
 import ServiceSection from "./ServiceSection.vue";
 import CompanySection from "./CompanySection.vue";
+import ActionSection from "./ActionSection.vue";
 
 export default {
   name: "Main",
   components:{
       Jumbotron,
       ServiceSection,
-      CompanySection
+      CompanySection,
+      ActionSection
   }
 };
 </script>

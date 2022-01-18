@@ -12,7 +12,7 @@
                     <input type="text" placeholder="name">
                     <br>
                     <input type="text" placeholder="name">
-                    <select name="" id="" placeholder="name">
+                    <select name="" id="">
                         <option value="">a</option>
                         <option value="">a</option>
                         <option value="">a</option>
@@ -20,6 +20,8 @@
                     </select>
                     <br>
                     <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+                    <br>
+                    <span>bottone</span>
                 </div>
             </div>
             <div class="examples">

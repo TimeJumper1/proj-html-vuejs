@@ -43,11 +43,11 @@ export default {
 
 <style scoped lang="scss">
 section{
-    height: 500px;
+    height: 600px;
     .background-image{
         background-image: url("../assets/img/bg-parallax.png");
         background-position: center ;
-        background-size: 150%;
+        background-size: 170%;
         background-repeat: no-repeat;
         height: 100%;
         overflow: hidden;
@@ -60,6 +60,7 @@ section{
         align-items: center;
         line-height: 40px;
         font-size: 15px;
+        padding:30px 0;
         .sinistra{
             padding-top:10px ;
             img{

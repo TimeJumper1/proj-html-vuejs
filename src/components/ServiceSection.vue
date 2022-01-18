@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="box-section">
-                <!-- da popoplare con un array? -->
+                <!-- da popoplare con un array -->
                 <div class="single-box">
 
                 </div>
@@ -46,9 +46,9 @@ export default {
 
 <style scoped lang="scss">
 section{
-    height: 800px;
+    // height: 800px;
     background-color: #eef4ed;
-    padding:55px 0;
+    margin: 40px 0;
     .container{
         width: 70%;
         margin: auto;

@@ -14,7 +14,7 @@
             </ul>
         </div>
         <div class="foto-section">
-            <!-- da popolarecon un v-for? -->
+            <!-- da popolarecon un v-for -->
             <div class="foto-card">
                 <img src="../assets/img/project-1.jpg" alt="mani sul computer">
                 <h3>testo per vedere se tutto va</h3>
@@ -54,8 +54,7 @@ export default {
 
 <style scoped lang="scss">
 section{
-    height: 700px;
-    padding: 80px 0;
+    margin: 100px 0;
     .top-info{
         text-align: center;
         ul{
@@ -75,14 +74,15 @@ section{
         margin: auto;
         .foto-card{
             width: calc((100% / 3) - 10px);
-            border-radius: 10px;
-            // test
+            height: auto;
+            border-radius: 20px;
+            
             overflow: hidden;
             margin: 5px;
             position: relative;
             img{
-                width: 100%;
-                height: auto;
+                max-width: 100%;
+                max-height:100% ;
                 filter: brightness(50%);
             }
             h3{

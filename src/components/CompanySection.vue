@@ -7,7 +7,7 @@
         <p>for 12 years we have been providing audit and warranty, financial advice, risk advice, taxes and related services to select clients</p>
       </div>
       <div class="info-container">
-        <!-- si potra usare un v-for? -->
+       
         <div class="info-card">
 
         </div>

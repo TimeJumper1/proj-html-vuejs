@@ -91,6 +91,7 @@ section{
                 
                 padding: 6px 14px;
                 color: #66727a;
+                border-radius: 3px;
                 &:hover{
                     background-color: #daeced;
                     transition: 0.3s;

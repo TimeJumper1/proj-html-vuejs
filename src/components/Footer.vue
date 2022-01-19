@@ -27,7 +27,7 @@
   </footer>
   <div class="bottom-footer">
       <h4>Enjoy the low price. we are tracking any intention of piracy</h4>
-      <h4>marchio copyright 2020 NEXGEN is Proudly Powered by <span class="bottom-footer-decor">Codings</span></h4>
+      <h4><i class="far fa-copyright"></i>2020 NEXGEN is Proudly Powered by <span class="bottom-footer-decor">Codings</span></h4>
       
 
     </div>
@@ -136,6 +136,7 @@ section{
           border: 1px solid #058283;
           margin: 18px 0 0;
           display: inline-block;
+          cursor: pointer;
         }
       }
       .list{

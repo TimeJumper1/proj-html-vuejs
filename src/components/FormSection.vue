@@ -8,20 +8,20 @@
                     <p>we will respond ti your message as soon as possible</p>
                 </div>
                 <div class="inputs">
-                    <input type="text" placeholder="name">
-                    <input type="text" placeholder="name">
+                    <input type="text" placeholder="name" v-model="name">
+                    <input type="text" placeholder="Email" v-model="email">
                     <br>
-                    <input type="text" placeholder="name">
+                    <input type="text" placeholder="phone" v-model="phone">
                     <select name="more info" id="" >
                         <option value="">more info</option>
-                        <option value="">a</option>
-                        <option value="">a</option>
-                        <option value="">a</option>
+                        <option value="">+39</option>
+                        <option value="">+20</option>
+                        <option value="">+98</option>
                     </select>
                     <br>
-                    <textarea name="" id="" cols="150" rows="10" placeholder="message"></textarea>
+                    <textarea name="" id="" cols="150" rows="10" placeholder="message" v-model="message"></textarea>
                     <br>
-                    <span class="btn">SEND</span>
+                    <span class="btn" @click="formClear">SEND</span>
                 </div>
             </div>
             <div class="examples">
@@ -31,7 +31,7 @@
                 <h2><span class="circle"><i class="fas fa-phone-alt"></i></span> +1 (305) 1234-5678</h2>
                 <h2><span class="circle"><i class="fas fa-envelope"></i></span>hello@example.com</h2>
                 <h2><span class="circle"><i class="fas fa-map-marker-alt"></i></span>Main Avenue, 987</h2>
-                <span class="btn">
+                <span class="btn" >
                     VIEW MAP
                 </span>
             </div>
@@ -42,7 +42,22 @@
 <script>
 export default {
   name: "FormSection",
-  
+  data: function(){
+      return{
+          name:"",
+          email:"",
+          phone:"",
+          message:"",
+      }
+  },
+  methods:{
+      formClear: function(){
+          this.name = ""
+          this.email = ""
+          this.phone = ""
+          this.message = ""
+      }
+  }
 };
 </script>
 
@@ -98,7 +113,7 @@ section{
                     width: calc((100% / 2) - 20px);
                     color: #817d80;
                     option{
-                        color:#ececec ;
+                        color:black;
                     }
                 }
                 textarea{

@@ -15,11 +15,11 @@
         </div>
         <div class="foto-section">
             <!-- da popolarecon un v-for -->
-            <div class="foto-card">
-                <img src="../assets/img/project-1.jpg" alt="mani sul computer">
-                <h3>Academic professional program in social media</h3>
+            <div v-for="(actionItem, index) in actionInfo" :key="index" class="foto-card">
+                <img :src="require(`../assets/img/project${actionItem.image}.jpg`)" alt="foto 1">
+                <h3>{{actionItem.content}}</h3>
             </div>
-            <div class="foto-card">
+            <!-- <div class="foto-card">
                 <img src="../assets/img/project-2.jpg" alt="mani sul computer">
                 <h3>President's speech at the annual meeting</h3>
             </div>
@@ -38,7 +38,7 @@
             <div class="foto-card">
                 <img src="../assets/img/project-6.jpg" alt="mani sul computer">
                 <h3>Confraternization of the procurement team</h3>
-            </div>
+            </div> -->
 
         </div>
     </section>
@@ -47,7 +47,37 @@
 <script>
 export default {
   name: "ActionSection",
-  
+  data: function(){
+      return {
+          actionInfo:[
+              {
+                  image:"-1",
+                  content:"Academic professional program in social media"
+              },
+              {
+                  image:"-2",
+                  content:"President's speech at the annual meeting"
+              },
+              {
+                  image:"-3",
+                  content:"International business trip in Shanghai"
+              },
+              {
+                  image:"-4",
+                  content:"Technology workshop with education theme"
+              },
+              {
+                  image:"-5",
+                  content:"Donation of clothes and food to the partner NGO"
+              },
+              {
+                  image:"-6",
+                  content:"Confraternization of the procurement team"
+              },
+              
+          ]
+      }
+  }
 };
 </script>
 

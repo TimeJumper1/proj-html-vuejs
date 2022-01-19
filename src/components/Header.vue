@@ -39,6 +39,7 @@ header{
         display: flex;
         justify-content: space-between;
         line-height: 40px;
+        min-width: 700px;
         .sinistra{
             font-size: 13px;
             color:#c0c3d0 ;

@@ -73,6 +73,7 @@ section{
         line-height: 40px;
         font-size: 15px;
         padding:30px 0;
+        min-width: 700px;
         .sinistra{
             padding-top:10px ;
             img{

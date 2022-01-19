@@ -126,6 +126,7 @@ section{
                 top: 70%;
                 transform: translate(-50% , -30%);
                 width: 80%;
+                min-width: 200px;
                 font-size: 22px;
             }
         }

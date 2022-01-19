@@ -13,78 +13,20 @@
             </div>
             <div class="box-section">
                 <!-- da popoplare con un array -->
-                <div class="single-box">
+                <div v-for="(servicesItem, index) in servicesInfo" :key="index" class="single-box">
                     <div class="top-part">
                         <div>
-                            <i class="fas fa-network-wired"></i>
+                            <i :class="servicesItem.icon"></i>
                         </div>
                         <div class="arrow">
-                            <i class="fas fa-arrow-right"></i>
+                            <i :class="servicesItem.arrowIcon"></i>
                         </div>
                     </div>
-                    <h3>Audit & assurance</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                    <h3>{{servicesItem.title}}</h3>
+                    <p>{{servicesItem.content}}</p>
                 </div>
-                <div class="single-box">
-                    <div class="top-part">
-                        <div>
-                            <i class="fas fa-briefcase"></i>
-                        </div>
-                        <div class="arrow">
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                    </div>
-                    <h3>Financial Advisory</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-                </div>
-                <div class="single-box">
-                    <div class="top-part">
-                        <div>
-                            <i class="far fa-chart-bar"></i>
-                        </div>
-                        <div class="arrow">
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                    </div>
-                    <h3>Analytics and M&A</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-                </div>
-                <div class="single-box">
-                    <div class="top-part">
-                        <div>
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        <div class="arrow">
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                    </div>
-                    <h3>Middle Marketing</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-                </div>
-                <div class="single-box">
-                    <div class="top-part">
-                        <div>
-                            <i class="fas fa-globe"></i>
-                        </div>
-                        <div class="arrow">
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                    </div>
-                    <h3>Legal Consulting</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-                </div>
-                <div class="single-box">
-                    <div class="top-part">
-                        <div>
-                            <i class="fas fa-inbox"></i>
-                        </div>
-                        <div class="arrow">
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                    </div>
-                    <h3>Regulatory Risk</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-                </div>
+                
+                
             </div>
         </div>
     </section>
@@ -93,7 +35,48 @@
 <script>
 export default {
   name: "ServiceSection",
-  
+  data: function(){
+      return {
+          servicesInfo:[
+              {
+                  icon:"fas fa-network-wired",
+                  arrowIcon: "fas fa-arrow-right",
+                  title:"Audit & Insurance",
+                  content:"Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+              },
+              {
+                  icon:"fas fa-briefcase",
+                  arrowIcon: "fas fa-arrow-right",
+                  title:"Financial Advisory",
+                  content:"Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+              },
+              {
+                  icon:"far fa-chart-bar",
+                  arrowIcon: "fas fa-arrow-right",
+                  title:"Analytics and M&A",
+                  content:"Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+              },
+              {
+                  icon:"fas fa-rocket",
+                  arrowIcon: "fas fa-arrow-right",
+                  title:"MIddle Marketing",
+                  content:"Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+              },
+              {
+                  icon:"fas fa-globe",
+                  arrowIcon: "fas fa-arrow-right",
+                  title:"Legal Consulting",
+                  content:"Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+              },
+              {
+                  icon:"fas fa-inbox",
+                  arrowIcon: "fas fa-arrow-right",
+                  title:"Regulatory Risk",
+                  content:"Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+              },
+          ]
+      }
+  }
 };
 </script>
 
@@ -163,6 +146,13 @@ section{
                     font-size: 28px;
                     .arrow{
                         color:#83c1c1 ;
+                        padding: 7px 12px;
+                        border-radius: 30px;
+                        &:hover{
+                            color: #0c8788;
+                            background-color: #7bd1d1;
+                            transition: 0.3s;
+                        }
                     }
                 }
                 h3{

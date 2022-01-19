@@ -21,26 +21,7 @@
         <h5><i class="fas fa-chevron-right"></i>{{footerItem.sixthListElement}}</h5>
         
       </div>
-      <!-- <div class="footer-col list">
-        
-        <h3>titolo</h3>
-        <h5><i class="fas fa-chevron-right"></i> the company</h5>
-        <h5><i class="fas fa-chevron-right"></i> the company</h5>
-        <h5><i class="fas fa-chevron-right"></i> the company</h5>
-        <h5><i class="fas fa-chevron-right"></i> the company</h5>
-        <h5><i class="fas fa-chevron-right"></i> the company</h5>
-        <h5><i class="fas fa-chevron-right"></i> the company</h5>
-      </div>
-      <div class="footer-col list">
-        
-        <h3>NEX GEN</h3>
-        <h5><i class="fas fa-chevron-right"></i> the company</h5>
-        <h5><i class="fas fa-chevron-right"></i> the company</h5>
-        <h5><i class="fas fa-chevron-right"></i> the company</h5>
-        <h5><i class="fas fa-chevron-right"></i> the company</h5>
-        <h5><i class="fas fa-chevron-right"></i> the company</h5>
-        <h5><i class="fas fa-chevron-right"></i> the company</h5>
-      </div> -->
+      
     </div>
     
   </footer>
@@ -164,12 +145,20 @@ section{
         flex-direction: column;
         justify-content: space-around;
         align-items: left;
-        padding: 20px 40px 10px 40px;
+        padding-left:10px ;
         margin: 20px 0 0;
+        max-height: 400px;
         h5{
           padding: 7px 0;
           font-size: 17px;
           color: #b1bbbe;
+          i{
+            margin-right: 6px;
+          }
+        }
+        h3{
+          font-size: 24px;
+          margin-bottom: 10px;
         }
       }
     }

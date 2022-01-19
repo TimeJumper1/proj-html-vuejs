@@ -55,7 +55,7 @@ export default {
 <style scoped lang="scss">
 section{
   display: flex;
-  height:700px ;
+  // height:700px ;
   position: relative;
   
   // test
@@ -101,15 +101,17 @@ section{
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
+      
       .info-card{
         width: calc((100% / 2) - 20px);
         margin: 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        
         // test
        
-        height: 150px;
+        height: 65%;
         h2{
           font-size: 19px;
           padding: 10px 0;
@@ -124,7 +126,8 @@ section{
     }
   }
   .sinistra{
-    padding: 70px 20px 70px 250px ;
+    width: 30%;
+    margin:10% 5% 4% 20% ;
   }
   .bullets-decorations{
     width: 170px;

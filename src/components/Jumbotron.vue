@@ -30,6 +30,17 @@
 
             </div>
         </div>
+        <div class="decor-elements">
+            <div class="empty">
+
+            </div>
+            <div class="full">
+
+            </div>
+            <div class="empty">
+
+            </div>
+        </div>
     </section>
 </template>
 
@@ -44,6 +55,7 @@ export default {
 <style scoped lang="scss">
 section{
     height: 600px;
+    position: relative;
     .background-image{
         background-image: url("../assets/img/bg-parallax.png");
         background-position: center ;
@@ -128,6 +140,26 @@ section{
             }
         }
     }
-    
+    .decor-elements{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 95%;
+        transform: translate(-50% , -5%);
+        
+        .empty{
+            border: 2px solid #a0d5d8;
+            padding: 17px 4px;
+            border-radius: 20px;
+            margin: 5px 0;
+        }
+        .full{
+            border: 1px solid #058283;
+            padding: 20px 3px;
+            border-radius: 20px;  
+            background-color:#058283 ;
+        }
+    }
 }
 </style>

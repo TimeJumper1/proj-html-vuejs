@@ -67,6 +67,7 @@ section{
         margin: 20px 10px;
         padding: 7px 17px;
         border: 1px solid #058283 ;
+        display: inline-block;
         cursor: pointer;
         &:hover{
           background-color: #058283 ;

@@ -6,11 +6,11 @@
                 <h2 class="title"><span class="decor"> Results</span> in Numbers</h2>
                 <div class="numbers">
                     <!-- da fare un con un v-for -->
-                    <div class="single-number">
-                        <h2>128</h2>
-                        <h3>certifications</h3>
+                    <div v-for="(numberItem, index) in numberInfo" :key="index" class="single-number">
+                        <h2>{{numberItem.number}}</h2>
+                        <h3>{{numberItem.content}}</h3>
                     </div>
-                    <div class="single-number">
+                    <!-- <div class="single-number">
                         <h2>280</h2>
                         <h3>Employees</h3>
                     </div>
@@ -21,7 +21,7 @@
                     <div class="single-number">
                         <h2>94</h2>
                         <h3>Country Served</h3>
-                    </div>
+                    </div> -->
                 </div>
     
             </div>
@@ -43,7 +43,30 @@
 <script>
 export default {
   name: "NumbersSection",
-  
+  data: function(){
+      return {
+          numberInfo:[
+              {
+                  number:"128",
+                  content:"certifications"
+              },
+              {
+                  number:"230",
+                  content:"Employees"
+              },
+              {
+                  number:"517",
+                  content:"Customers"
+              },
+              {
+                  number:"94",
+                  content:"Countries Served"
+              },
+              
+              
+          ]
+      }
+  }
 };
 </script>
 

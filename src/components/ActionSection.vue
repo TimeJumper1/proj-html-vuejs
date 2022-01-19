@@ -19,26 +19,7 @@
                 <img :src="require(`../assets/img/project${actionItem.image}.jpg`)" alt="foto 1">
                 <h3>{{actionItem.content}}</h3>
             </div>
-            <!-- <div class="foto-card">
-                <img src="../assets/img/project-2.jpg" alt="mani sul computer">
-                <h3>President's speech at the annual meeting</h3>
-            </div>
-            <div class="foto-card">
-                <img src="../assets/img/project-3.jpg" alt="mani sul computer">
-                <h3>International business trip in Shanghai</h3>
-            </div>
-            <div class="foto-card">
-                <img src="../assets/img/project-4.jpg" alt="mani sul computer">
-                <h3>Technology workshop with education theme</h3>
-            </div>
-            <div class="foto-card">
-                <img src="../assets/img/project-5.jpg" alt="mani sul computer">
-                <h3>Donation of clothes and food to the partner NGO</h3>
-            </div>
-            <div class="foto-card">
-                <img src="../assets/img/project-6.jpg" alt="mani sul computer">
-                <h3>Confraternization of the procurement team</h3>
-            </div> -->
+            
 
         </div>
     </section>

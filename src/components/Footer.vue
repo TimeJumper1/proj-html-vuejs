@@ -10,19 +10,19 @@
         <h4><span><i class="fas fa-map-marker-alt"></i></span>Main Avenue, 987</h4>
         <span class="btn">GET IN TOUCH</span>
       </div>
-      <div class="footer-col list">
+      <div v-for="(footerItem, index) in footerInfo" :key="index" class="footer-col list">
         <!-- da popolare con un v-for -->
-        <h3>About</h3>
-        <h5><i class="fas fa-chevron-right"></i> the company</h5>
-        <h5><i class="fas fa-chevron-right"></i> the company</h5>
-        <h5><i class="fas fa-chevron-right"></i> the company</h5>
-        <h5><i class="fas fa-chevron-right"></i> the company</h5>
-        <h5><i class="fas fa-chevron-right"></i> the company</h5>
-        <h5><i class="fas fa-chevron-right"></i> the company</h5>
+        <h3>{{footerItem.title}}</h3>
+        <h5><i class="fas fa-chevron-right"></i>{{footerItem.firstListElement}}</h5>
+        <h5><i class="fas fa-chevron-right"></i>{{footerItem.secondListElement}}</h5>
+        <h5><i class="fas fa-chevron-right"></i>{{footerItem.thirdListElement}}</h5>
+        <h5><i class="fas fa-chevron-right"></i>{{footerItem.fourthListElement}}</h5>
+        <h5><i class="fas fa-chevron-right"></i>{{footerItem.fifthListElement}}</h5>
+        <h5><i class="fas fa-chevron-right"></i>{{footerItem.sixthListElement}}</h5>
         
       </div>
-      <div class="footer-col list">
-        <!-- da popolare con un v-for -->
+      <!-- <div class="footer-col list">
+        
         <h3>titolo</h3>
         <h5><i class="fas fa-chevron-right"></i> the company</h5>
         <h5><i class="fas fa-chevron-right"></i> the company</h5>
@@ -32,7 +32,7 @@
         <h5><i class="fas fa-chevron-right"></i> the company</h5>
       </div>
       <div class="footer-col list">
-        <!-- da popolare con un v-for -->
+        
         <h3>NEX GEN</h3>
         <h5><i class="fas fa-chevron-right"></i> the company</h5>
         <h5><i class="fas fa-chevron-right"></i> the company</h5>
@@ -40,7 +40,7 @@
         <h5><i class="fas fa-chevron-right"></i> the company</h5>
         <h5><i class="fas fa-chevron-right"></i> the company</h5>
         <h5><i class="fas fa-chevron-right"></i> the company</h5>
-      </div>
+      </div> -->
     </div>
     
   </footer>
@@ -61,9 +61,42 @@
 <script>
 export default {
   name: "Footer",
-  props: {
-    msg: String,
-  },
+  data: function(){
+      return {
+          footerInfo:[
+              {
+                  title:"About",
+                  firstListElement:"The Company",
+                  secondListElement:"Institutional",
+                  thirdListElement:"Social & Events",
+                  fourthListElement:"Innovation",
+                  fifthListElement:"Environment",
+                  sixthListElement:"Technology"
+              },
+              {
+                  title:"Services",
+                  firstListElement:"Audit & Assurance",
+                  secondListElement:"Financial Advisory",
+                  thirdListElement:"Analytics M&A",
+                  fourthListElement:"Middle Marketing",
+                  fifthListElement:"Legal Consulting",
+                  sixthListElement:"Regulatory Risk"
+              },
+              {
+                  title:"Support",
+                  firstListElement:"Responsibilty",
+                  secondListElement:"Terms of Use",
+                  thirdListElement:"About Cookies",
+                  fourthListElement:"Privacy Policy",
+                  fifthListElement:"Accessibility",
+                  sixthListElement:"Information"
+              },
+              
+              
+              
+          ]
+      }
+  }
 };
 </script>
 
